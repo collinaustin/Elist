@@ -20,7 +20,7 @@ LEFT JOIN core.geo_lookup g
 WHERE lower(o.product_name) like '%macbook%'
 	AND region = 'NA'
 GROUP BY 1,2
-ORDER BY 1 DESC;
+ORDER BY 1 DESC
 )
 
 SELECT AVG(total_sales) AS avg_quarter_sales,
